@@ -48,7 +48,7 @@ def ordenacao_selecao2(lista):
         nova_lista.append(lista.pop(busca_maior(lista)))
     return nova_lista
 
-    # Testando o algorítmo Ordenção por Seleção (ordenação crescente)
+    # Testando o algorítmo Ordenção por Seleção (ordenação decrescente)
 minha_lista = [5, 3, 6, 2, 10]
 
 print(ordenacao_selecao2(minha_lista))

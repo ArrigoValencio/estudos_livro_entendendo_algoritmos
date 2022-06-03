@@ -16,7 +16,7 @@ def pesquisa_binaria(lista, item):
 
     return None
 
-    Testando o algorítmo Pesquisa-Binária
+    #Testando o algorítmo Pesquisa-Binária
 minha_lista = [1, 3, 5, 7, 9]
 
 print(pesquisa_binaria(minha_lista, 3))
