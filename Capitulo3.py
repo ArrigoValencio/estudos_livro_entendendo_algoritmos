@@ -12,7 +12,7 @@ def contagem_regressiva(x):
 
 print(contagem_regressiva(5))
 
-# cálculo fatorial de um número
+# Cálculo fatorial de um número
 def fatorial(y):
     # caso base
     if y == 1:

@@ -1,4 +1,5 @@
-# algoritmo que soma números de uma lista
+    # Um pouco sobre o uso de recursão
+# Algoritmo que soma números de uma lista
 def soma(lista):
     # caso base
     if lista == []:
@@ -7,11 +8,11 @@ def soma(lista):
     else:
          return  lista.pop(0) + soma(lista)
 
-# testando
+# Testando
 minha_lista = [1, 2, 3, 3]
 print(soma(minha_lista))
 
-# algorítmo que conta número de ítens de uma lista
+# Algoritmo que conta número de ítens de uma lista
 def contador(lista):
     # caso base
     if lista == []:
@@ -24,10 +25,11 @@ def contador(lista):
 minha_lista2 = [1,0,2,3,0,5]
 print(contador(minha_lista2))
 
-# algorítmo que encontra o valor mais alto em uma lista
+# Algoritmo que encontra o valor mais alto em uma lista
 def maior_valor(lista):
     if lista == []:
         return None
+    # caso base
     else:
         maior = lista[0]
         if maior >= lista[1]:
@@ -37,6 +39,7 @@ def maior_valor(lista):
             lista.pop(0)
         if len(lista) == 1:
             return maior
+        # caso recursivo
         else:
             return maior_valor(lista)
 
@@ -44,7 +47,7 @@ def maior_valor(lista):
 minha_lista3 = [1,3,4,5,1004,99,104,100,875]
 print(maior_valor(minha_lista3))
 
-# algorítmo de pesquisa usando recursão
+# Algoritmo de pesquisa usando recursão
 def pesquisa_indice(lista, item):
     if lista == []:
         return None
@@ -61,3 +64,14 @@ def pesquisa_indice(lista, item):
 minha_lista4 = [1,3,4,5,1004,99]
 print(pesquisa_indice(minha_lista4, 99))
 
+    # Algoritmo Quicksort
+def quicksort(lista):
+    if len(lista) < 2:
+        return lista
+    else:
+        pivo = lista[0]
+        menor_pivo = [valor for valor in lista[1:] if valor <= pivo]
+        maior_pivo = [valor for valor in lista[1:] if valor > pivo]
+        return quicksort(menor_pivo) + [pivo] + quicksort(maior_pivo)
+
+print(quicksort([10, 2, 3, 1, 99, 33]))

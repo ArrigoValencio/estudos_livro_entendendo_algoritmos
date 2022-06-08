@@ -1,5 +1,5 @@
 
-    # Algorítmo Pesquisa-Binária
+    # Algoritmo Pesquisa-Binária
 def pesquisa_binaria(lista, item):
     baixo = 0
     alto = len(lista) - 1
@@ -16,13 +16,13 @@ def pesquisa_binaria(lista, item):
 
     return None
 
-    #Testando o algorítmo Pesquisa-Binária
+    # Testando o algoritmo Pesquisa-Binária
 minha_lista = [1, 3, 5, 7, 9]
 
 print(pesquisa_binaria(minha_lista, 3))
 print(pesquisa_binaria(minha_lista, -1))
 
-    # Determinando tempo de execução para o algorítmo Pesquisa-Binária com n = 100 (notação 'Big O')
+    # Determinando tempo de execução para o algoritmo Pesquisa-Binária com n = 100 (notação 'Big O')
 minha_lista2 = range(1, 101)
 n = len(minha_lista2)
 
